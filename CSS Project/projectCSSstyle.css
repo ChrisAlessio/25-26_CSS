@@ -1,0 +1,37 @@
+.container {
+    width:1900px;
+    margin:auto;
+}
+.HorNavBar ul li h1{
+    color:white;
+    float:left;
+}
+.HorNavBar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 1px 14px;
+    overflow: hidden;
+    background-color: black;
+    border-radius: 10px;
+
+}
+.HorNavBar ul li a{
+    float: right;
+}
+.HorNavBar ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1px 50px;
+    text-decoration: none;
+    transition: 0.7s;
+}
+
+ul li a:hover {
+    background-color: gray;
+    border-radius: 25px;
+}
+.empty{
+    height: 150px;
+    width: inherit;
+}
