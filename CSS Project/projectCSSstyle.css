@@ -51,6 +51,14 @@
     border: 1px solid black;
     background-color: #DEDEDE;
 }
+.news{
+    height: 728px;
+    width: 500px;
+    float:left;
+    background-color: blue;
+    border: 2px solid black;
+
+}
 /* Metal Albums */
 .metalAlbums{
     height: 725px;
