@@ -1,0 +1,106 @@
+.container{
+    background-color: #BABABA;
+
+    display: grid;
+    grid-template-areas:
+            'header header header header header'
+            'left main main main right'
+            'footer footer footer footer footer';
+    gap: 5px;
+}
+.site-header{
+    grid-area: header;
+    background-color: lightblue;
+    text-align: center;
+    padding: 30px;
+    color: steelblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
+}
+.main-nav{
+    grid-area: left;
+    text-align: center;
+    background-color: lightgray;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
+}
+.main-nav ul li a{
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: steelblue;
+}
+.main-nav h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-content{
+    grid-area: main;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
+}
+.site-sidebar{
+    grid-area: right;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
+}
+.site-footer{
+    grid-area: footer;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: steelblue;
+    padding: 30px;
+    color: white;
+}
+
+/*@media only screen and (orientation: landscape){
+    .site-header{
+        background-color: black;
+    }
+    .main-nav{
+        background-color: black;
+    }
+    .main-content{
+        background-color: black;
+    }
+    .site-footer{
+        background-color: black;
+    }
+    .site-sidebar{
+        background-color: black;
+    }
+    *{color:white;}
+}*/
+@media only screen and (max-width: 600px){
+    .main-nav{grid-area: 1/ span 5;}
+    .site-header{grid-area: 1/ span 5;}
+    .main-content{grid-area: 1/span 5;}
+    .site-footer{grid-area: 1/span 5;}
+    .site-sidebar{grid-area: 1/span 5;}
+}
+@media only screen and (min-width: 850px){
+    .site-header{
+        background-color: lightblue;
+        color: steelblue;
+    }
+    .main-nav{
+        background-color: lightgray;
+        color: black;
+    }
+    .main-content{
+        background-color: white;
+        color: black;
+    }
+    .site-footer{
+        background-color: steelblue;
+        color: white;
+    }
+    .site-sidebar{
+        background-color: lightgray;
+        color: black;
+    }
+
+}
