@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas:
+        "home empty empty rockHeader grungeHeader punkHeader metalHeader"
+        "info info news news rock grunge punk metal"
+        "info info news news rock grunge punk metal"
+        "info info news news rock grunge punk metal"
+        "footer footer footer footer footer footer footer footer";
+            gap: 5px;
+        }
+        .home{
+            grid-area: home;
+            background-color: red;
+        }
+        .empty{
+            grid-area: empty;
+            background-color: blue;
+        }
+        .rockHeader{
+            grid-area: rockHeader;
+            background-color: yellow;
+        }
+        .grungeHeader{
+            grid-area: grungeHeader;
+            background-color: green;
+        }
+        .punkHeader{
+            grid-area: punkHeader;
+            background-color: pink;
+        }
+        .metalHeader{
+            grid-area: metalHeader;
+            background-color: lightgreen;
+        }
+        .info{
+            grid-area: info;
+            background-color: lightblue;
+        }
+        .news{
+            grid-area: news;
+            background-color: lightgrey;
+        }
+        .rock{
+            grid-area: rock;
+            background-color: indigo;
+        }
+        .grunge{
+            grid-area: grunge;
+            background-color: bisque;
+        }
+        .punk{
+            grid-area: punk;
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="home"></div>
+    <div class="empty"></div>
+    <div class="rockHeader"></div>
+    <div class="grungeHeader"></div>
+    <div class="punkHeader"></div>
+    <div class="metalHeader"></div>
+    <div class="info"></div>
+    <div class="news"></div>
+    <div class="rock"></div>
+    <div class="grunge"></div>
+    <div class="punk"></div>
+    <div class="metal"></div>
+    <div class="footer"></div>
+</div>
+</body>
+</html>
