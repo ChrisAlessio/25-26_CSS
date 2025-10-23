@@ -5,9 +5,10 @@
     <title>test</title>
     <style>
         .container{
+
             display: grid;
             grid-template-areas:
-        "home empty empty rockHeader grungeHeader punkHeader metalHeader"
+        "home empty empty empty rockHeader grungeHeader punkHeader metalHeader"
         "info info news news rock grunge punk metal"
         "info info news news rock grunge punk metal"
         "info info news news rock grunge punk metal"
@@ -58,23 +59,31 @@
             grid-area: punk;
             background-color: azure;
         }
+        .metal{
+            grid-area: metal;
+            background-color: lightseagreen;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: lightsalmon;
+        }
     </style>
 </head>
 <body>
 <div class="container">
-    <div class="home"></div>
-    <div class="empty"></div>
-    <div class="rockHeader"></div>
-    <div class="grungeHeader"></div>
-    <div class="punkHeader"></div>
-    <div class="metalHeader"></div>
-    <div class="info"></div>
-    <div class="news"></div>
-    <div class="rock"></div>
-    <div class="grunge"></div>
-    <div class="punk"></div>
-    <div class="metal"></div>
-    <div class="footer"></div>
+    <div class="home">home</div>
+    <div class="empty">empty</div>
+    <div class="rockHeader">rockHead</div>
+    <div class="grungeHeader">grungeHead</div>
+    <div class="punkHeader">punkHead</div>
+    <div class="metalHeader">metalHead</div>
+    <div class="info">info</div>
+    <div class="news">news</div>
+    <div class="rock">rock</div>
+    <div class="grunge">grunge</div>
+    <div class="punk">punk</div>
+    <div class="metal">metal</div>
+    <div class="footer">footer</div>
 </div>
 </body>
 </html>

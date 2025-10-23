@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: arial, serif;
 }
 .container {
     /*height: 900px;
@@ -7,17 +8,18 @@
     margin:auto;*/
     display: grid;
     grid-template-areas:
-        "home empty empty rockHeader grungeHeader punkHeader metalHeader"
+        "home empty empty empty rockHeader grungeHeader punkHeader metalHeader"
         "info info news news rock grunge punk metal"
         "info info news news rock grunge punk metal"
         "info info news news rock grunge punk metal"
         "footer footer footer footer footer footer footer footer";
-    gap: 5px;
+    gap: 10px;
     background-color: #F2EBEB;
 }
-/*.HorNavBar ul li h1{
+.HorNavBar ul li h1{
     grid-area: home;
     color:white;
+    float: left;
 }
 .metalHead{
     grid-area: metalHeader;
@@ -59,6 +61,7 @@
 }
 .empty{
     grid-area: empty;}
+
 .sideContent{
     grid-area: info;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -69,17 +72,36 @@
 }
 .news{
     grid-area: news;
-    background-color: blue;
+    background-color: white;
     border: 2px solid black;
+    text-align: center;
 
 }
+.ace{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+.ace img{
+    width: 400px;
+}
+.rush{
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+.rush img{
+    width: 400px;
+}
 /* Metal Albums */
-/*.metalAlbums{
+.metalAlbums{
     grid-area: metal;
 }
 .metalAlbums ul li{
     list-style-type: none;
-    border: 1px solid black;
+    border: 3px solid black;
 }
 .metalAlbums ul li:hover{
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -87,12 +109,12 @@
     transition: 0.1s;
 }
 /*Punk Rock*/
-/*.prAlbums{
+.prAlbums{
     grid-area: punk;
 }
 .prAlbums ul li{
     list-style-type: none;
-    border: 1px solid black;
+    border: 3px solid black;
 }
 .prAlbums ul li:hover{
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -100,12 +122,12 @@
     transition: 0.1s;
 }
 /*Grunge*/
-/*.grungeAlbums{
+.grungeAlbums{
     grid-area: grunge;
 }
 .grungeAlbums ul li{
     list-style-type: none;
-    border: 1px solid black;
+    border: 3px solid black;
 }
 .grungeAlbums ul li:hover{
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -113,12 +135,12 @@
     transition: 0.1s;
 }
 /*Hard Rock*/
-/*.hrAlbums{
+.hrAlbums{
     grid-area: rock;
 }
 .hrAlbums ul li{
     list-style-type: none;
-    border: 1px solid black;
+    border: 3px solid black;
 }
 .hrAlbums ul li:hover{
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
