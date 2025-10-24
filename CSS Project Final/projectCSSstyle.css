@@ -8,7 +8,8 @@
     margin:auto;*/
     display: grid;
     grid-template-areas:
-        "home empty empty empty rockHeader grungeHeader punkHeader metalHeader"
+        /*"home empty empty empty rockHeader grungeHeader punkHeader metalHeader"*/
+        "home navbar navbar navbar navbar navbar navbar navbar"
         "info info news news rock grunge punk metal"
         "info info news news rock grunge punk metal"
         "info info news news rock grunge punk metal"
@@ -16,52 +17,47 @@
     gap: 10px;
     background-color: #F2EBEB;
 }
-.HorNavBar ul li h1{
-    grid-area: home;
-    color:white;
-    float: left;
+
+.HorNavBar{
+    grid-area: navbar;
 }
-.metalHead{
-    grid-area: metalHeader;
-}
-.punkHead{
-    grid-area: punkHeader;
-}
-.grungeHead{
-    grid-area: grungeHeader;
-}
-.rockHead{
-    grid-area: rockHeader;
-}
+/* Horizontal Navbar styles:*/
 .HorNavBar ul{
-    grid-area: header;
     list-style-type: none;
     margin: 0;
     padding: 1px 14px;
     overflow: hidden;
     background-color: black;
     border-radius: 10px;
+    color: white;
 
 }
-
+.HorNavBar ul li{
+    float:left;
+}
 .HorNavBar ul li a{
-    grid-area: header;
     display: block;
     color: white;
-    text-align: center;
     padding: 1px 80px;
     text-decoration: none;
     transition: 0.7s;
+
 }
 
 .HorNavBar ul li a:hover {
     background-color: gray;
     border-radius: 25px;
-
 }
-.empty{
-    grid-area: empty;}
+/* Navbar grid placement*/
+.home {
+    grid-area: home;
+}
 
+
+/*.empty{
+    grid-area: navbar;}*/
+/*Navbar end*/
+/* Content info */
 .sideContent{
     grid-area: info;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -70,11 +66,13 @@
     border: 1px solid black;
     background-color: #DEDEDE;
 }
+/*News content*/
 .news{
     grid-area: news;
     background-color: white;
     border: 2px solid black;
     text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 
 }
 .ace{
@@ -95,6 +93,7 @@
 .rush img{
     width: 400px;
 }
+/* News end */
 /* Metal Albums */
 .metalAlbums{
     grid-area: metal;
@@ -147,6 +146,7 @@
     border: 3px solid white;
     transition: 0.1s;
 }
+/* Footer */
 .footer{
     background-color: #DEDEDE;
     border: 1px solid black;
