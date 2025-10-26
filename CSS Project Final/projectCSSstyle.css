@@ -23,9 +23,9 @@
     grid-template-areas:
         /*"home empty empty empty rockHeader grungeHeader punkHeader metalHeader"*/
             "home navbar navbar navbar navbar navbar navbar navbar"
-        "info info news news rock grunge punk metal"
-        "info info news news rock grunge punk metal"
-        "info info news news rock grunge punk metal"
+        "info info MoM MoM ajfa ajfa rip rip"
+        "info info MoM MoM ajfa ajfa rip rip"
+        "info info MoM MoM ajfa ajfa rip rip"
         "footer footer footer footer footer footer footer footer";
     gap: 10px;
     background-color: #F2EBEB;
@@ -179,3 +179,43 @@
 }
 /* Contact Us page*/
 .contact{height:775px;}
+/*Metal page*/
+.rip{
+    grid-area: rip;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: black;
+    place-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.ajfa{
+    grid-area: ajfa;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: black;
+    place-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.MoM{
+    grid-area: MoM;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: black;
+    place-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
