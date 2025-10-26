@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family: arial, serif;
 }
+/*main page*/
 .container {
     /*height: 900px;
     width:1880px;
@@ -17,7 +18,23 @@
     gap: 10px;
     background-color: #F2EBEB;
 }
+.metal{
+    display: grid;
+    grid-template-areas:
+        /*"home empty empty empty rockHeader grungeHeader punkHeader metalHeader"*/
+            "home navbar navbar navbar navbar navbar navbar navbar"
+        "info info news news rock grunge punk metal"
+        "info info news news rock grunge punk metal"
+        "info info news news rock grunge punk metal"
+        "footer footer footer footer footer footer footer footer";
+    gap: 10px;
+    background-color: #F2EBEB;
 
+}
+.home{
+    grid-area: home;
+    padding-left: 20px;
+}
 .HorNavBar{
     grid-area: navbar;
 }
@@ -25,13 +42,15 @@
 .HorNavBar ul{
     list-style-type: none;
     margin: 0;
-    padding: 1px 14px;
+    padding: 10px 14px;
     overflow: hidden;
     background-color: black;
     border-radius: 10px;
     color: white;
+    float:right;
 
 }
+
 .HorNavBar ul li{
     float:left;
 }
@@ -41,6 +60,7 @@
     padding: 1px 80px;
     text-decoration: none;
     transition: 0.7s;
+    float: right;
 
 }
 
@@ -51,6 +71,10 @@
 /* Navbar grid placement*/
 .home {
     grid-area: home;
+}
+.home a{
+    color: black;
+    text-decoration: none;
 }
 
 
@@ -153,3 +177,5 @@
     grid-area: footer;
     text-align: center;
 }
+/* Contact Us page*/
+.contact{height:775px;}
