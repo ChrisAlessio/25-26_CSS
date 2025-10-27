@@ -31,6 +31,45 @@
     background-color: #F2EBEB;
 
 }
+.punk{
+    display: grid;
+    grid-template-areas:
+        /*"home empty empty empty rockHeader grungeHeader punkHeader metalHeader"*/
+            "home navbar navbar navbar navbar navbar navbar navbar"
+        "info info cr cr ramones ramones stf stf"
+        "info info cr cr ramones ramones stf stf"
+        "info info cr cr ramones ramones stf stf"
+        "footer footer footer footer footer footer footer footer";
+    gap: 10px;
+    background-color: #F2EBEB;
+
+}
+.rock{
+    display: grid;
+    grid-template-areas:
+        /*"home empty empty empty rockHeader grungeHeader punkHeader metalHeader"*/
+            "home navbar navbar navbar navbar navbar navbar navbar"
+        "info info afd afd tre tre hh hh"
+        "info info afd afd tre tre hh hh"
+        "info info afd afd tre tre hh hh"
+        "footer footer footer footer footer footer footer footer";
+    gap: 10px;
+    background-color: #F2EBEB;
+
+}
+.grunge{
+    display: grid;
+    grid-template-areas:
+        /*"home empty empty empty rockHeader grungeHeader punkHeader metalHeader"*/
+            "home navbar navbar navbar navbar navbar navbar navbar"
+        "info info dirt dirt bmf bmf bleach bleach"
+        "info info dirt dirt bmf bmf bleach bleach"
+        "info info dirt dirt bmf bmf bleach bleach"
+        "footer footer footer footer footer footer footer footer";
+    gap: 10px;
+    background-color: #F2EBEB;
+
+}
 .home{
     grid-area: home;
     padding-left: 20px;
@@ -208,6 +247,126 @@
 }
 .MoM{
     grid-area: MoM;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: black;
+    place-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+/*Punk Rock page*/
+.stf{
+    grid-area: stf;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: black;
+    place-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.ramones{
+    grid-area: ramones;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: black;
+    place-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.cr{
+    grid-area: cr;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: black;
+    place-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+/*Grunge page*/
+.bleach{
+    grid-area: bleach;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: black;
+    place-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.bmf{
+    grid-area: bmf;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: black;
+    place-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.dirt{
+    grid-area: dirt;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: black;
+    place-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+/*Hard Rock page*/
+.hh{
+    grid-area: hh;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: black;
+    place-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.tre{
+    grid-area: tre;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: black;
+    place-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.afd{
+    grid-area: afd;
     border: 1px solid black;
     border-radius: 15px;
     background-color: black;
